@@ -1,0 +1,205 @@
+<?xml version="1.0" ?>
+<!--
+Copyright © 2020 Kevin Kim <root@hamonikr.org>
+Copyright © 2013 Francesco Fumanti <francesco.fumanti@gmx.net>
+Copyright © 2011-2014 marmuta <marmvta@gmail.com>This file is part of Onboard.
+Onboard is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 3 of the License, or
+(at your option) any later version.
+Onboard is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.
+-->
+<keyboard format="3.2" id="zhuyin" section="system" summary="可搭配注音輸入法使用的配置">
+  <include file="key_defs.xml"/>
+  <box border="0.5" orientation="vertical" spacing="1.5">
+    <!--- word suggestions -->
+    <panel filename="zhuyin-Alpha.svg" scan_priority="1">
+      <include file="word_suggestions.xml"/></panel>
+    <box spacing="1.5">
+      <box spacing="2">
+        <!--- keyboard, multiple layers -->
+        <panel>
+          <panel filename="zhuyin-Alpha.svg" layer="alpha">
+            <!---第5排 -->
+           <key group="alphanumeric" id="TLDE" keycode="49"  sticky="false"/>
+            <key altgr_label="ㄅ" group="alphanumeric" id="AE01" keycode="10" label="1" shift_label="!" sticky="false"/>
+            <key altgr_label="ㄉ" group="alphanumeric" id="AE02" keycode="11" label="2" shift_label="@" sticky="false"/>
+            <key altgr_label="ˇ" group="alphanumeric" id="AE03" keycode="12" label="3" shift_label="#" sticky="false"/>
+            <key altgr_label="ˋ" group="alphanumeric" id="AE04" keycode="13" label="4" shift_label="$" sticky="false"/>
+            <key altgr_label="ㄓ" group="alphanumeric" id="AE05" keycode="14" label="5" shift_label="%" sticky="false"/>
+            <key altgr_label="ˊ" group="alphanumeric" id="AE06" keycode="15" label="6" shift_label="^" sticky="false"/>
+            <key altgr_label="˙" group="alphanumeric" id="AE07" keycode="16" label="7" shift_label="&amp;" sticky="false"/>
+            <key altgr_label="ㄚ" group="alphanumeric" id="AE08" keycode="17" label="8" shift_label="*" sticky="false"/>
+            <key altgr_label="ㄞ" group="alphanumeric" id="AE09" keycode="18" label="9" shift_label="(" sticky="false"/>
+            <key altgr_label="ㄢ" group="alphanumeric" id="AE10" keycode="19" label="0" shift_label=")" sticky="false"/>
+            <key altgr_label="ㄦ" group="alphanumeric" id="AE11" keycode="20" label="-" shift_label="_" sticky="false"/>
+            <key group="alphanumeric" id="AE12" keycode="21" sticky="false"/>
+            <key group="bottomrow" id="BKSP"/>
+            <key group="bottomrow" id="DELE.next-to-backspace"/>
+            
+            <!---第4排 -->
+            <key group="misc" id="TAB"/>
+            <key altgr_label="ㄆ" group="alphanumeric" id="AD01" keycode="24" label="q" shift_label="Q" sticky="false"/>
+            <key altgr_label="ㄊ" group="alphanumeric" id="AD02" keycode="25" label="w" shift_label="W" sticky="false"/>
+            <key altgr_label="ㄍ" group="alphanumeric" id="AD03" keycode="26" label="e" shift_label="E" sticky="false"/>
+            <key altgr_label="ㄐ" group="alphanumeric" id="AD04" keycode="27" label="r" shift_label="R" sticky="false"/>
+            <key altgr_label="ㄔ" group="alphanumeric" id="AD05" keycode="28" label="t" shift_label="T" sticky="false"/>
+            <key altgr_label="ㄗ" group="alphanumeric" id="AD06" keycode="29" label="y" shift_label="Y" sticky="false"/>
+            <key altgr_label="ㄧ" group="alphanumeric" id="AD07" keycode="30" label="u" shift_label="U" sticky="false"/>
+            <key altgr_label="ㄝ" group="alphanumeric" id="AB08" keycode="59" label="," shift_label="&lt;" sticky="false"/>
+            <key altgr_label="ㄟ" group="alphanumeric" id="AD09" keycode="32" label="o" shift_label="O" sticky="false"/>
+            <key altgr_label="ㄣ" group="alphanumeric" id="AD10" keycode="33" label="p" shift_label="P" sticky="false"/>
+            <key group="alphanumeric" id="AD11" keycode="34" sticky="false"/>
+            <key group="alphanumeric" id="AD12" keycode="35" sticky="false"/>
+
+            <!--- 第3排 -->
+            <key group="misc" id="CAPS"/>
+            <key altgr_label="ㄇ" group="alphanumeric" id="AC01" keycode="38" label="a" shift_label="A" sticky="false"/>
+            <key altgr_label="ㄋ" group="alphanumeric" id="AC02" keycode="39" label="s" shift_label="S" sticky="false"/>
+            <key altgr_label="ㄎ" group="alphanumeric" id="AC03" keycode="40" label="d" shift_label="D" sticky="false"/>
+            <key altgr_label="ㄑ" group="alphanumeric" id="AC04" keycode="41" label="f" shift_label="F" sticky="false"/>
+            <key altgr_label="ㄕ" group="alphanumeric" id="AC05" keycode="42" label="g" shift_lable="G" sticky="false"/>
+            <key altgr_label="ㄘ" group="alphanumeric" id="AC06" keycode="43" label="h" shift_label="H" sticky="false"/>
+            <key altgr_label="ㄨ" group="alphanumeric" id="AC07" keycode="44" label="j" shift_label="J" sticky="false"/>
+            <key altgr_label="ㄜ" group="alphanumeric" id="AC08" keycode="45" label="k" shift_label="K" sticky="false"/>
+            <key  altgr_label="ㄠ" group="alphanumeric" id="AC09" keycode="46" label="l" shift_label="L" sticky="false"/>
+            <key altgr_label="ㄤ" group="alphanumeric" id="AC10" keycode="47" label=";" shift_label=":" sticky="false"/>
+            <key group="alphanumeric" id="AC11" keycode="48" sticky="false"/>
+            <key group="alphanumeric" id="BKSL" keycode="51" sticky="false"/>
+            <key group="misc" id="RTRN" label_x_align="0.65"/>
+
+            <!--- 第2排-->
+            <key group="alphanumeric" id="LSGT" keycode="94" sticky="false"/>
+            <key altgr_label="ㄈ" group="alphanumeric" id="AB01" keycode="52" label="z"/>
+            <key altgr_label="ㄌ" group="alphanumeric" id="AB02" keycode="53" label="x" shift_label="X" sticky="false"/>
+            <key altgr_label="ㄏ" group="alphanumeric" id="AB03" keycode="54" label="c" shift_label="C" sticky="false"/>
+            <key altgr_label="ㄒ" group="alphanumeric" id="AB04" keycode="55" label="v" shift_label="V" sticky="false"/>
+            <key altgr_label="ㄖ" group="alphanumeric" id="AB05" keycode="56" label="b" shift_label="B" sticky="false"/>
+            <key altgr_label="ㄙ" group="alphanumeric" id="AB06" keycode="57" label="n" shift_label="N" sticky="false"/>
+            <key altgr_label="ㄩ" group="alphanumeric" id="AB07" keycode="58" label="m" shift_label="M" sticky="false"/>
+            <key altgr_label="ㄛ" group="alphanumeric" id="AD08" keycode="31" label="i" shift_label="I" sticky="false"/>
+            <key altgr_label="ㄡ" group="alphanumeric" id="AB09" keycode="60" label="." shift_label="&gt;" sticky="false"/>
+            <key altgr_label="ㄥ" group="alphanumeric" id="AB10" keycode="61" label="/" shift_label="?" sticky="false"/>
+
+            <!--- 第1排-->
+            <key group="bottomrow" id="LCTL"/>
+            <key group="bottomrow" id="LWIN"/>
+            <key group="bottomrow" id="LALT"/>
+            <key group="bottomrow" id="SPCE"/>
+            <key action="single-stroke" group="bottomrow" id="RALT" keycode="130" label="注" sticky="true"/>
+            <key group="directions_alpha" id="LEFT"/>
+            <key group="directions_alpha" id="RGHT"/>
+            <key group="directions_alpha" id="UP"/>
+            <key group="directions_alpha" id="DOWN"/>
+            <key group="shifts" id="LFSH"/>
+            <key group="shifts" id="RTSH"/>
+          </panel>
+          <panel border="2" filename="zhuyin-Numbers.svg" layer="numbers">
+            <key group="keypadmisc" id="NMLK" scan_priority="2"/>
+            <key group="keypadmisc" id="KPDL" scan_priority="2"/>
+            <key group="keypadmisc" id="KPEN" scan_priority="2"/>
+            <key group="keypadnumber" id="KP0" scan_priority="2"/>
+            <key group="keypadnumber" id="KP1" scan_priority="2"/>
+            <key group="keypadnumber" id="KP2" scan_priority="2"/>
+            <key group="keypadnumber" id="KP3" scan_priority="2"/>
+            <key group="keypadnumber" id="KP4" scan_priority="2"/>
+            <key group="keypadnumber" id="KP5" scan_priority="2"/>
+            <key group="keypadnumber" id="KP6" scan_priority="2"/>
+            <key group="keypadnumber" id="KP7" scan_priority="2"/>
+            <key group="keypadnumber" id="KP8" scan_priority="2"/>
+            <key group="keypadnumber" id="KP9" scan_priority="2"/>
+            <key group="keypadoperators" id="KPSU" scan_priority="2"/>
+            <key group="keypadoperators" id="KPDV" scan_priority="2"/>
+            <key group="keypadoperators" id="KPAD" scan_priority="2"/>
+            <key group="keypadoperators" id="KPMU" scan_priority="2"/>
+            <key group="directions" id="LEFT" scan_priority="1"/>
+            <key group="directions" id="RGHT" scan_priority="1"/>
+            <key group="directions" id="UP" scan_priority="1"/>
+            <key group="directions" id="DOWN" scan_priority="1"/>
+            <key group="editing" id="INS"/>
+            <key group="editing" id="DELE" image="" label="Del"/>
+            <key group="editing" id="HOME"/>
+            <key group="editing" id="END"/>
+            <key group="editing" id="PGUP"/>
+            <key group="editing" id="PGDN"/>
+            <key group="bottomrow" id="ESC"/>
+            <key group="fkeys" id="F1.rows_of_six"/>
+            <key group="fkeys" id="F2.rows_of_six"/>
+            <key group="fkeys" id="F3.rows_of_six"/>
+            <key group="fkeys" id="F4.rows_of_six"/>
+            <key group="fkeys" id="F5.rows_of_six"/>
+            <key group="fkeys" id="F6.rows_of_six"/>
+            <key group="fkeys" id="F7.rows_of_six"/>
+            <key group="fkeys" id="F8.rows_of_six"/>
+            <key group="fkeys" id="F9.rows_of_six"/>
+            <key group="fkeys" id="F12.rows_of_six"/>
+            <key group="fkeys" id="F10.rows_of_six"/>
+            <key group="fkeys" id="F11.rows_of_six"/>
+            <key group="editing" id="Prnt" scan_priority="1"/>
+            <key group="editing" id="Pause" scan_priority="1"/>
+            <key group="editing" id="Scroll" scan_priority="1"/>
+          </panel>
+          <panel border="2" filename="zhuyin-Utils.svg" layer="utils">
+            <key group="snippets" id="m0"/>
+            <key group="snippets" id="m1"/>
+            <key group="snippets" id="m2"/>
+            <key group="snippets" id="m3"/>
+            <key group="snippets" id="m4"/>
+            <key group="snippets" id="m5"/>
+            <key group="snippets" id="m6"/>
+            <key group="snippets" id="m7"/>
+            <key group="snippets" id="m8"/>
+            <key group="snippets" id="m9"/>
+            <key group="snippets" id="m10"/>
+            <key group="snippets" id="m11"/>
+            <key group="snippets" id="m12"/>
+            <key group="snippets" id="m13"/>
+            <key group="snippets" id="m14"/>
+            <key group="snippets" id="m15"/>
+            <key group="bottomrow" id="quit" scan_priority="1"/>
+            <key group="bottomrow" id="settings" scan_priority="1"/>
+          </panel>
+        </panel>
+      </box>
+      <!--- click helpers -->
+      <panel filename="zhuyin-Alpha.svg" id="click">
+        <key group="click" id="middleclick"/>
+        <key group="click" id="secondaryclick"/>
+        <key group="click" id="doubleclick"/>
+        <key group="click" id="dragclick"/>
+        <key group="click" id="hoverclick.bottom-row" unlatch_layer="false"/>
+      </panel>
+      <!--- side bar -->
+      <panel filename="zhuyin-Alpha.svg" id="paneswitch">
+        <box compact="true" orientation="vertical">
+          <panel group="nowordlist">
+            <key group="bottomrow" id="hide"/>
+            <box orientation="vertical">
+              <box expand="false" orientation="horizontal">
+                <key group="bottomrow" id="showclick"/>
+                <key group="bottomrow" id="move"/>
+              </box>
+              <key group="bottomrow" id="layer0" scan_priority="3" show_active="false"/>
+              <key group="bottomrow" id="layer1" scan_priority="3"/>
+              <key group="bottomrow" id="layer2" scan_priority="3"/>
+            </box>
+          </panel>
+          <panel group="wordlist">
+            <box orientation="vertical">
+              <key expand="false" group="sidebar" id="move" label_margin="2.5" svg_id="move.wordlist"/>
+              <key expand="false" group="sidebar" id="showclick" label_margin="2" svg_id="showclick.wordlist"/>
+              <key group="bottomrow" id="layer0" scan_priority="3" show_active="false" svg_id="layer0.wordlist"/>
+              <key group="bottomrow" id="layer1" scan_priority="3" svg_id="layer1.wordlist"/>
+              <key group="bottomrow" id="layer2" scan_priority="3" svg_id="layer2.wordlist"/>
+            </box>
+          </panel>
+        </box>
+      </panel>
+    </box>
+  </box>
+</keyboard>
